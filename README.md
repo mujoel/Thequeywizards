@@ -3,7 +3,7 @@
 
 Team Members:
 - Mucyo Joel 26606
-- Gatashya Hugo Valois 
+- Gatashya Hugo Valois 26512
 
 ## Project Overview
 This project explores SQL Window Functions through practical examples. Window functions allow for complex analytical queries that would otherwise require multiple self-joins or subqueries. These functions perform calculations across a set of rows related to the current row, providing powerful analytical capabilities.
@@ -123,3 +123,39 @@ This query:
 - DENSE_RANK ensures duplicate salaries get the same rank
 - The outer query filters to keep only the top 3 ranks
 - This approach handles ties correctly (could have more than 3 employees if there are ties)
+### Query 4:Earliest Records (First Hires)
+#### Business Problem
+Identify the first 2 employees hired in each department to recognize tenure and experience.
+#### SQL Query
+```sql
+
+WITH HireRankedEmployees AS (
+    SELECT 
+        emp_id,
+        name,
+        department,
+        salary,
+        hire_date,
+        ROW_NUMBER() OVER (PARTITION BY department ORDER BY hire_date) as hire_rank
+    FROM employees
+)
+SELECT 
+    emp_id,
+    name,
+    department,
+    hire_date,
+    hire_rank
+FROM HireRankedEmployees
+WHERE hire_rank <= 2
+ORDER BY department, hire_rank;
+```
+## Explanation
+This query:
+
+- Uses ROW_NUMBER() to assign a sequential number to each employee based on hire date
+- PARTITION BY department ensures numbering restarts for each department
+- ORDER BY hire_date means the earliest hired get the lowest numbers
+- Filtering WHERE hire_rank <= 2 keeps only the first two employees hired in each department
+
+
+

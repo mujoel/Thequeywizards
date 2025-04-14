@@ -71,7 +71,9 @@ It helps identify:
 - Salary progression within departments
 - Unusually large gaps between salaries
 - Clustering of similar salaries
-### Query 2:Ranking within Categories (RANK and DENSE_RANK) 
+### Query 2:Ranking within Categories (RANK and DENSE_RANK)
+#### Business Problem
+Rank employees within each department based on their salaries to understand compensation hierarchy.
 #### SQL Query
 ```sql
 SELECT 

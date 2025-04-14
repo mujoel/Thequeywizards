@@ -26,6 +26,7 @@ CREATE TABLE employees (
     salary DECIMAL(10,2),
     hire_date DATE
 );
+```
 
 ## Query Implementations
 

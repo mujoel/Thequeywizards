@@ -171,7 +171,7 @@ FROM HireRankedEmployees
 WHERE hire_rank <= 2
 ORDER BY department, hire_rank;
 ```
-![Alt text](images/myphoto.png)
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/earliest%20records.png)
 
 ## Explanation
 This query:

@@ -40,7 +40,7 @@ INSERT INTO employees VALUES (11, 'Christopher Imena', 'Marketing', 71000, TO_DA
 INSERT INTO employees VALUES (12, 'Jessica Keza', 'Marketing', 67000, TO_DATE('2019-10-14', 'YYYY-MM-DD'));
 
 ```
-![Alt text](images/myphoto.png)
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/table%20creation.png)
 
 ## Query Implementations
 

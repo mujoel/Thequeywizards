@@ -15,6 +15,17 @@ We're using an Employee dataset with the following structure:
 - `department`: Department (IT, HR, Finance, Marketing)
 - `salary`: Annual salary
 - `hire_date`: Date of hire
+  ### Table Creation and Data Insertion
+Below is the SQL script used to create our employees table and populate it with sample data:
+
+```sql
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department VARCHAR(50),
+    salary DECIMAL(10,2),
+    hire_date DATE
+);
 
 ## Query Implementations
 

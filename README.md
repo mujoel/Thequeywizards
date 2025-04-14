@@ -156,6 +156,27 @@ This query:
 - PARTITION BY department ensures numbering restarts for each department
 - ORDER BY hire_date means the earliest hired get the lowest numbers
 - Filtering WHERE hire_rank <= 2 keeps only the first two employees hired in each department
+### Query 5:Aggregation with Window Functions
+#### Business Problem
+Compare individual salaries against departmental and company-wide benchmarks.
+#### SQL Query
+```sql
+SELECT 
+    emp_id,
+    name,
+    department,
+    salary,
+    MAX(salary) OVER (PARTITION BY department) as dept_max_salary,
+    MAX(salary) OVER () as overall_max_salary
+FROM employees
+ORDER BY department, salary DESC;
+```
+## Explanation
+This query:
+- MAX(salary) OVER (PARTITION BY department) calculates the maximum salary within each department
+- MAX(salary) OVER () calculates the maximum salary across all departments
+- Each row shows the employee's own salary, their department's maximum, and the overall maximum
+- This allows for easy comparison of individual performance against departmental and company-wide metrics
 
 
 

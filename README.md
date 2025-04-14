@@ -64,3 +64,10 @@ SELECT
     END as comparison_with_prev
 FROM employees
 ORDER BY department, salary;
+```
+## Explanation
+This query uses LAG() and LEAD() functions to compare each employee's salary with the previous and next highest salary in their department. 
+It helps identify:
+-Salary progression within departments
+-Unusually large gaps between salaries
+-Clustering of similar salaries

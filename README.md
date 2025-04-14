@@ -26,6 +26,9 @@ CREATE TABLE employees (
     salary DECIMAL(10,2),
     hire_date DATE
 );
+```
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/table%20creation.png)
+```sql
 INSERT INTO employees VALUES (1, 'John Kwizera', 'IT', 75000, TO_DATE('2020-01-15', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (2, 'Jane Mwiza', 'IT', 85000, TO_DATE('2019-05-20', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (3, 'Robert Mugabe', 'IT', 65000, TO_DATE('2021-03-10', 'YYYY-MM-DD'));
@@ -40,7 +43,7 @@ INSERT INTO employees VALUES (11, 'Christopher Imena', 'Marketing', 71000, TO_DA
 INSERT INTO employees VALUES (12, 'Jessica Keza', 'Marketing', 67000, TO_DATE('2019-10-14', 'YYYY-MM-DD'));
 
 ```
-![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/table%20creation.png)
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/inserting%20in%20tables.png)
 
 ## Query Implementations
 

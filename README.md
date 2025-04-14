@@ -40,6 +40,7 @@ INSERT INTO employees VALUES (11, 'Christopher Imena', 'Marketing', 71000, TO_DA
 INSERT INTO employees VALUES (12, 'Jessica Keza', 'Marketing', 67000, TO_DATE('2019-10-14', 'YYYY-MM-DD'));
 
 ```
+![Alt text](images/myphoto.png)
 
 ## Query Implementations
 
@@ -65,6 +66,7 @@ SELECT
 FROM employees
 ORDER BY department, salary;
 ```
+![Alt text](images/myphoto.png)
 ## Explanation
 This query uses LAG() and LEAD() functions to compare each employee's salary with the previous and next highest salary in their department. 
 It helps identify:
@@ -90,6 +92,8 @@ SELECT
 FROM employees
 ORDER BY department, salary DESC;
 ```
+![Alt text](images/myphoto.png)
+
 ## Explanation
 This query demonstrates two ranking functions:
 - RANK() assigns a unique rank to each distinct value, with gaps in sequence for ties
@@ -125,6 +129,8 @@ FROM RankedEmployees
 WHERE salary_rank <= 3
 ORDER BY department, salary_rank;
 ```
+![Alt text](images/myphoto.png)
+
 ## Explanation
 This query:
 - Uses a Common Table Expression (CTE) to first rank all employees
@@ -162,6 +168,8 @@ FROM HireRankedEmployees
 WHERE hire_rank <= 2
 ORDER BY department, hire_rank;
 ```
+![Alt text](images/myphoto.png)
+
 ## Explanation
 This query:
 
@@ -188,6 +196,8 @@ SELECT
 FROM employees
 ORDER BY department, salary DESC;
 ```
+![Alt text](images/myphoto.png)
+
 ## Explanation
 This query:
 - MAX(salary) OVER (PARTITION BY department) calculates the maximum salary within each department

@@ -2,7 +2,7 @@
 # SQL Window Functions Exploration
 
 Team Members:
-- Mucyo JOel 26606
+- Mucyo Joel 26606
 - Gatashya Hugo Valois 
 
 ## Project Overview

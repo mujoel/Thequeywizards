@@ -95,4 +95,31 @@ This query demonstrates two ranking functions:
 ### Query 3:Top Records Identification
 #### Business Problem
 Identify the top 3 highest-paid employees in each department for bonus distribution.
+#### SQL Query
+```sql
+WITH RankedEmployees AS (
+    SELECT 
+        emp_id,
+        name,
+        department,
+        salary,
+        DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_rank
+    FROM employees
+)
+SELECT 
+    emp_id,
+    name,
+    department,
+    salary,
+    salary_rank
+FROM RankedEmployees
+WHERE salary_rank <= 3
+ORDER BY department, salary_rank;
+```
+## Explanation
+This query:
 
+- Uses a Common Table Expression (CTE) to first rank all employees
+- DENSE_RANK ensures duplicate salaries get the same rank
+- The outer query filters to keep only the top 3 ranks
+- This approach handles ties correctly (could have more than 3 employees if there are ties)

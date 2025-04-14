@@ -199,7 +199,7 @@ SELECT
 FROM employees
 ORDER BY department, salary DESC;
 ```
-![Alt text](images/myphoto.png)
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/Aggregation.png)
 
 ## Explanation
 This query:

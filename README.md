@@ -71,3 +71,23 @@ It helps identify:
 - Salary progression within departments
 - Unusually large gaps between salaries
 - Clustering of similar salaries
+### Query 2:Ranking within Categories (RANK and DENSE_RANK) 
+#### SQL Query
+```sql
+SELECT 
+    emp_id,
+    name,
+    department,
+    salary,
+    RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_rank,
+    DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_dense_rank
+FROM employees
+ORDER BY department, salary DESC;
+```
+## Explanation
+This query demonstrates two ranking functions:
+- RANK() assigns a unique rank to each distinct value, with gaps in sequence for ties
+- DENSE_RANK() assigns a unique rank to each distinct value without gaps
+- If two employees have the same salary, RANK() will skip the next rank, while DENSE_RANK() won't
+- Example: If two employees both rank 2, the next employee would be rank 4 with RANK() but rank 3 with DENSE_RANK()
+

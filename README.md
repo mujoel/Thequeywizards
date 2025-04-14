@@ -132,7 +132,7 @@ FROM RankedEmployees
 WHERE salary_rank <= 3
 ORDER BY department, salary_rank;
 ```
-![Alt text](images/myphoto.png)
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/Top%20earners%20using%20rank.png)
 
 ## Explanation
 This query:

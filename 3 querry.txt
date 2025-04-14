@@ -1,0 +1,21 @@
+
+    EMP_ID NAME                                                                                                 DEPARTMENT                                             SALARY SALARY_RANK
+---------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- ---------- -----------
+         7 David Gusenga                                                                                        Finance                                                 92000           1
+         9 Thomas Ishimwe                                                                                       Finance                                                 91000           2
+         8 Lisa Gahigi                                                                                          Finance                                                 88000           3
+         6 Sarah Ikirezi                                                                                        HR                                                      78000           1
+         4 Emily Kwitonda                                                                                       HR                                                      72000           2
+         5 Michael Manzi                                                                                        HR                                                      69000           3
+         2 Jane Mwiza                                                                                           IT                                                      85000           1
+         1 John Kwizera                                                                                         IT                                                      75000           2
+         3 Robert Mugabe                                                                                        IT                                                      65000           3
+        11 Christopher Imena                                                                                    Marketing                                               71000           1
+        10 Jennifer Iradukunda                                                                                  Marketing                                               67000           2
+
+    EMP_ID NAME                                                                                                 DEPARTMENT                                             SALARY SALARY_RANK
+---------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- ---------- -----------
+        12 Jessica Keza                                                                                         Marketing                                               67000           2
+
+12 rows selected. 
+

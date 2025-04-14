@@ -1,0 +1,14 @@
+
+    EMP_ID NAME                                                                                                 DEPARTMENT                                         HIRE_DATE  HIRE_RANK
+---------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- --------- ----------
+         9 Thomas Ishimwe                                                                                       Finance                                            30-SEP-18          1
+         7 David Gusenga                                                                                        Finance                                            15-FEB-19          2
+         6 Sarah Ikirezi                                                                                        HR                                                 23-JUN-17          1
+         4 Emily Kwitonda                                                                                       HR                                                 05-NOV-18          2
+         2 Jane Mwiza                                                                                           IT                                                 20-MAY-19          1
+         1 John Kwizera                                                                                         IT                                                 15-JAN-20          2
+        12 Jessica Keza                                                                                         Marketing                                          14-OCT-19          1
+        11 Christopher Imena                                                                                    Marketing                                          22-APR-20          2
+
+8 rows selected. 
+

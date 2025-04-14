@@ -1,0 +1,21 @@
+
+    EMP_ID NAME                                                                                                 DEPARTMENT                                             SALARY PREV_SALARY NEXT_SALARY COMPARISON_W
+---------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- ---------- ----------- ----------- ------------
+         8 Lisa Gahigi                                                                                          Finance                                                 88000                   91000 FIRST RECORD
+         9 Thomas Ishimwe                                                                                       Finance                                                 91000       88000       92000 HIGHER      
+         7 David Gusenga                                                                                        Finance                                                 92000       91000             HIGHER      
+         5 Michael Manzi                                                                                        HR                                                      69000                   72000 FIRST RECORD
+         4 Emily Kwitonda                                                                                       HR                                                      72000       69000       78000 HIGHER      
+         6 Sarah Ikirezi                                                                                        HR                                                      78000       72000             HIGHER      
+         3 Robert Mugabe                                                                                        IT                                                      65000                   75000 FIRST RECORD
+         1 John Kwizera                                                                                         IT                                                      75000       65000       85000 HIGHER      
+         2 Jane Mwiza                                                                                           IT                                                      85000       75000             HIGHER      
+        10 Jennifer Iradukunda                                                                                  Marketing                                               67000                   67000 FIRST RECORD
+        12 Jessica Keza                                                                                         Marketing                                               67000       67000       71000 EQUAL       
+
+    EMP_ID NAME                                                                                                 DEPARTMENT                                             SALARY PREV_SALARY NEXT_SALARY COMPARISON_W
+---------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- ---------- ----------- ----------- ------------
+        11 Christopher Imena                                                                                    Marketing                                               71000       67000             HIGHER      
+
+12 rows selected. 
+

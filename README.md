@@ -69,7 +69,7 @@ SELECT
 FROM employees
 ORDER BY department, salary;
 ```
-![Alt text](images/myphoto.png)
+![Alt text](https://github.com/mujoel/Thequeywizards/blob/main/using%20lag.png)
 ## Explanation
 This query uses LAG() and LEAD() functions to compare each employee's salary with the previous and next highest salary in their department. 
 It helps identify:
